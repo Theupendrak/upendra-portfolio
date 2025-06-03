@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body-background {
+    background-color: #2C3E50;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 150px 12% 0;
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    border-radius: 5px;
+}
+
+.navbar .logo {
+    color: #ECF0F1;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover a {
+    color: #2980B9;
+}
+
+.navbar ul li.active a {
+    color: green;
+}
+
+.resume {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: #2C3E50;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.resume:hover {
+    background-color: #3498DB;
+    box-shadow: 0 0 25px #3498DB;
+}
+
+.Home {
+    width: 100%;
+    min-height: 100vh;
+    background: #2C3E50;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+   padding: 150px 12% 0;
+}
+.home-head{
+    color: white;
+}
+
+.Home-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: white;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.Home-content p {
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 25px 0 30px;
+    color: white;
+    padding: 0px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.img-box img {
+    border-radius: 15%;
+    width: 310px;
+    box-shadow: 0 0 20px white;
+    cursor: zoom-in;
+}
+
+.skills-para {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.Technical-headings,
+.technical-headings-h4,
+.technical-subheadings
+ {
+    color: white;
+    font-weight: bold;
+}
+.Technical-para{
+    color: white;
+    font-weight: 500;
+
+}
+
+.skills_header h1 {
+    color: #fff;
+    font-weight: 300;
+}
+.technical-headings-h4 p{
+    font-size: 20px;
+}
+
+.skills_header p {
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.certificate {
+    background-color: #2C3E50;
+    padding: 10px;
+}
+.certificate-img{
+    
+}
+
+.certificate-head {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.certificate-para {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.carding {
+    align-items: end;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 310px;
+    height: 450px;
+    margin-left: 20px ;
+    margin-top: 100px;
+}
+.View-certificate-bttn{
+    color: blue;
+    background-color: #262626;
+    border-radius: 5px;
+    width: 150px;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.contact-form form {
+    flex-basis: 60%;
+    display: inline-block;
+    width: 70%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+form input,
+form textarea {
+    width: 70%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.contact-form form button {
+    background-color: #2C3E50;
+    font-size: 20px;
+    padding: 0 40px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid pink;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.contact-form form button:hover {
+    box-shadow: 0 0 26px white;
+    border-color: aqua;
+    color: aqua;
+}
