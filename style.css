@@ -190,6 +190,9 @@ a {
     margin-top: 0px;
     margin-left: 10px;
 }
+.technical-subheadings{
+    margin-bottom: 50px;
+}
 
 .certificate-para {
     color: white;
@@ -222,6 +225,10 @@ a {
     color: #fff;
     align-items: center;
     justify-content: center;
+}
+.project_container{
+    margin-top: 10px;
+    margin-left: 100px;
 }
 .projectcard{
  text-align: center;
