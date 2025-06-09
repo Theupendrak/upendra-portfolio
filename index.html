@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 <body class="body-background">
-<nav class="navbar" p-5>
+<nav class="navbar" >
         <div class="logo">My Portfolio</div>
         <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="#Aboutme">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
             <li><a href="files/My_Resume.pdf"  class="resume" onclick="" target="_blank">Resume</a></li>
         </ul>
     </nav>
@@ -32,7 +33,7 @@
 </section>
 
 <!-- --------About me------------- -->
- <div class="aboutme d-flex flex-column justify-content-center align-items-center p-5 mr-10">
+ <div class="aboutme d-flex flex-column justify-content-center align-items-center p-5 mr-10" id="Aboutme">
  <div class="col-12 ">
     <section class="Aboutme">
     <p class="skills-para">I am Upendra Kanchapu, I hold a B.Tech degree in  Information Technology from Pragati Engineering College,
@@ -43,7 +44,7 @@
  </div>
 
 <!-- --------skills------------- -->
-<div class="col-12 d-flex justify-content-center align-items-center min-vh-50">
+<div class="col-12 d-flex justify-content-center align-items-center min-vh-50" id="skills">
     <div class="container p-4 mr-5">
         <div class="row d-flex flex-column justify-content-center align-items-center">
             <div class="skills-section ">
@@ -75,26 +76,61 @@
      </div>
 </div>
 
-<!-- certification-section -->
-<div class="certificate  pb-5">
-    <div class="continer ">
-        <div class="row">
-            <div class="col-12 col-md-14 ">
-            <div class="carding">
-           <center> <img class="certificate-img" src="images/aws-web-pic.jpg" alt="AWS Web Pic" height="290px" width="290px">
-</center>
-            <h1 class="certificate-head">Aws certified cloud practitioner</h1>
-            <P class="certificate-para">Successfully completed global aws certification in the month of Auguest 2024</P>
-           <center> <button class="View-certificate-bttn"><a href="files/AWS Certified Cloud Practitioner certificate.pdf" onclick="" target="_blank">View Certificate</a></button></center>
-        </div>
-                </div>   
-       
+<!-- certification-section -->   
+ <div class="bgcolor2 pt-5 pb-5" id="Certifications">
+        <div class="container">
+            <div class="row">            
+                <div class="col-12 col-md-4">
+                    <div class="carding p-3">
+                        <h1 class="certificate-head">Aws cloud practitioner certification</h1>
+                       <center> <img class="certificate-img" src="images/aws-web-pic.jpg" alt="AWS Web Pic" height="290px" width="290px"></center>                 
+                        <p class="certificate-para">Successfully completed AWS Global certification  Auguest 2024</p>
+                        <center> <button class="View-certificate-bttn"><a href="files/AWS Certified Cloud Practitioner certificate.pdf" onclick="" target="_blank">View Certificate</a></button></center>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="carding p-3">
+                        <h1 class="certificate-head">Web and MobileApp Certification</h1>
+                        <img src="images/Web_and_Mobileapp.jpg" class="certificate-img"/>
+                        
+                        <p class="certificate-para">I have completed Full stack internship provided by Datavalley</p>
+                        <center> <button class="View-certificate-bttn"><a href="files/Web_and_Mobileapp_Certificate.pdf" onclick="" target="_blank">View Certificate</a></button></center>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="carding p-3">
+                        <h1 class="certificate-head"> Python Programming certificate</h1>
+                        <img src="images/Python_basic.jpg" class="certificate-img"/>
+                        <h1 class="certificate-head"> </h1>
+                        <p class="certificate-para">Successfully Completed Python Programming Certificate
+                            <span class="offers"></span>
+                            </p>
+                           <center> <button class="View-certificate-bttn"><a href="files/Python_basic certificate.pdf" onclick="" target="_blank">View Certificate</a></button></center> 
+                    </div>
+                </div>
+
+                
+            </div>
         </div>
       </div>
-    </div>   
 
-
-
+<!--Projects-->
+<div class="bgcolor2 pt-5 pb-5" id="Projects">
+        <div class="project_container">
+            <center><h3 class="technical-subheadings mt-2 mb-4"> <U>Here is my Project</h3></U></center>
+            <div class="row">            
+                <div class="col-12 col-md-4">
+                    <div class="projectcard p-3">
+                        <img class="project-img" src="images/Upendra_pic.jpg" alt="AWS Web Pic" >                 
+                        <p class="certificate-para">My Portfolio Website</p>
+                        <center> <button class="View-certificate-bttn"><a href="https://github.com/Theupendrak/upendra-portfolio" onclick="" target="_blank">View Certificate</a></button></center>
+                    </div>
+                </div>
+                </div>
+        </div>
+      </div>
 
 
 
@@ -102,13 +138,13 @@
 
 
 <!-- contact-sectionn -->
-<div class="contact-form">
+<div class="contact-form" id="Contact">
     <form name="submit-to-google-sheet"><center>
         <h2>Contact Me</h2>
-    <input type="input" name="Name" placeholder="your name" required>
-    <input type="input" name="Email" placeholder="your e-mail" reqUired>
+    <input type="input" name="Name" placeholder="your name" aria-required="">
+    <input type="input" name="Email" placeholder="your e-mail" aria-required="true">
  <textarea type="input" name="Message" rows="6" placeholder="Your Message" ></textarea></center> 
-   <center><button name="btn" onclick="detailssubmit()" type="submit" >Send</button></center>
+   <center><button name="btn" onclick="detailssubmit()" type="submit" aria-required="true">Send</button></center>
    <br>
 
 </form>
@@ -132,6 +168,7 @@
         .catch(error => console.error('Error!', error.message))
     })
     function detailssubmit(){
+
         console.log(alert("Submitted Successfully"));    }
   </script>
 

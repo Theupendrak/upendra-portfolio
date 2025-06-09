@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body {
+  padding-top: 70px; /* Adjust this value based on navbar height */
+}
 
 .body-background {
     background-color: #2C3E50;
@@ -16,19 +19,23 @@ a {
     text-decoration: none;
 }
 
+
 .navbar {
-    left: 0;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    padding: 150px 12% 0;
+    padding: 15px 12%;
     background-color: #2C3E50;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    
+    z-index: 1000; /* make sure it’s on top */
     border-radius: 5px;
+    margin: 0; /* remove margin */
 }
+
+
 
 .navbar .logo {
     color: #ECF0F1;
@@ -78,13 +85,14 @@ a {
 }
 
 .Home {
+    padding-top: 80px;
     width: 100%;
     min-height: 100vh;
     background: #2C3E50;
     display: flex;
     align-items: center;
     gap: 7em;
-   padding: 150px 12% 0;
+   padding: 15px 12% 0;
 }
 .home-head{
     color: white;
@@ -156,13 +164,29 @@ a {
     padding: 10px;
 }
 .certificate-img{
+    width: 300px;
+  height: 200px;
     
 }
 
+.carding {
+  text-align: center;
+  background-color: #2C3E50;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5eaf4;
+  border-radius: 16px;
+}
+
+
+.bgcolor4 {
+  background-color: #323f4b;
+}
+
 .certificate-head {
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+    color: #148ddd;
+     font-size: 20px;
+    font-weight: 500;
     margin-top: 0px;
     margin-left: 10px;
 }
@@ -176,17 +200,7 @@ a {
     margin-left: 10px;
 }
 
-.carding {
-    align-items: end;
-    border-style: solid;
-    border-color: white;
-    border-radius: 5px;
-    border-width: 1px;
-    width: 310px;
-    height: 450px;
-    margin-left: 20px ;
-    margin-top: 100px;
-}
+
 .View-certificate-bttn{
     color: blue;
     background-color: #262626;
@@ -209,7 +223,21 @@ a {
     align-items: center;
     justify-content: center;
 }
-
+.projectcard{
+ text-align: center;
+  background-color: #2C3E50;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5eaf4;
+  border-radius: 16px;
+  height: 440px;
+  width: 300px;
+    
+}
+.project-img{
+    width: 250px;
+    height: 320px;
+}
 form input,
 form textarea {
     width: 70%;
